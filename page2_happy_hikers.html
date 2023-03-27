@@ -30,23 +30,23 @@
     <!-- booking form -->
 <div>
   <h2>Booking & Reservations</h2>
-  <form class="booking">
+  <form class="booking" id="booking">
     <h4>Personal Information</h4>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name" name="name" required>
     <br>
     <label for="bday">Birth Date:</label>
-    <input type="date" id="bday" name="bday">
+    <input type="date" id="bday" name="bday" required>
     <br>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" required>
     <br>
     <label for="phone">Contact Number:</label>
-    <input type="tel" id="phone" name="phone">
+    <input type="tel" id="phone" name="phone" required>
     <br>
     <h4>Tour Information</h4>
     <label for="destination">Destination</label>
-    <select id="destination" name="destination">
+    <select id="destination" name="destination" required>
       <option value="dest1">Dest1</option>
       <option value="dest2">Dest2</option>
       <option value="dest3">Dest3</option>
@@ -56,10 +56,10 @@
     </select>
     <br>
     <label for="pax">Number of Person(s):</label>
-    <input type="number" id="pax" name="pax" min="1" max="10">
+    <input type="number" id="pax" name="pax" min="1" max="10" required>
     <br>
     <label>Tour Option</label>
-    <input type="radio" id="public" name="tour" value="Public">
+    <input type="radio" id="public" name="tour" value="Public" checked>
     <label for="public">Public</label>
     <input type="radio" id="private" name="tour" value="Private">
     <label for="private">Private</label>
@@ -71,6 +71,10 @@
     <br>
     <label for="total">Total:</label>
     <input type="text" id="total" name="total" disabled>
+    <br>
+    <label for="note">Note:</label>
+    <br>
+    <textarea name="note" id="note" form="booking" rows="5" cols="40">Enter note here...</textarea>
     <br>
     <input type="submit" id="submit" value="Book Now">
   </form>
