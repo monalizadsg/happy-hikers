@@ -1,0 +1,33 @@
+html, body, h1, h2, h3,
+p, a, ul, li, form, label, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set the default page element styles */
+body {
+  line-height: 1.2em;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a, nav ul a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
