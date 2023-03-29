@@ -7,13 +7,19 @@
     <title>Beautiful British Columbia Hiking Tours</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" href="css/imgSlider.css" />
   </head>
   <body>
     <!-- header nav -->
     <header>
       <nav>
-        <a href="index.html" class="logo"> Happy Hikers </a>
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo.png"
+            alt="Happy Hiker logo"
+            width="150"
+            height="100"
+        /></a>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="page2_happy_hikers.html">Destinations</a></li>
@@ -23,22 +29,34 @@
     </header>
     <article>
       <!-- heading -->
-      <section class="images-slider">
+      <section class="slider">
         <img
+          class="img-slide active"
           id="img-1"
-          src="https://source.unsplash.com/t5a6i6hf4XE"
+          src="https://source.unsplash.com/XfVeIluIk14"
           alt="Image 1"
         />
-        <!-- <img
+        <img
+          class="img-slide"
           id="img-2"
-          src="https://source.unsplash.com/h1L_PJuDs0o"
+          src="https://source.unsplash.com/FgDCnYV3AVc"
           alt="Image 2"
         />
         <img
+          class="img-slide"
           id="img-3"
-          src="https://source.unsplash.com/w9Ou4E37OC8"
+          src="https://source.unsplash.com/TFyi0QOx08c"
           alt="Image 3"
-        /> -->
+        />
+        <div class="content active">
+          <h1>Explore.<br /><span>nature's beauty</span></h1>
+        </div>
+        <div class="content">
+          <h1>Connect.<br /><span>with nature</span></h1>
+        </div>
+        <div class="content">
+          <h1>Adventures.<br /><span>in the wild</span></h1>
+        </div>
       </section>
       <!-- services offered -->
       <section class="services">
@@ -116,5 +134,7 @@
     </article>
     <!-- footer -->
     <footer>Footer</footer>
+    <!-- javascript -->
+    <script src="script/imgSlider.js"></script>
   </body>
 </html>
