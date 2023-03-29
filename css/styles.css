@@ -67,7 +67,8 @@ section.services {
   background-color: #f8efe5;
 }
 
-section.services .s-title {
+section.services .s-title,
+section.reviews h3 {
   text-align: center;
   font-size: 2em;
   line-height: 1.8;
@@ -109,4 +110,59 @@ section.services .s-desc {
 
 .service p.desc {
   text-align: center;
+}
+
+/* reviews */
+section.reviews {
+  padding: 30px;
+  padding-top: 50px;
+}
+
+.reviews-boxes {
+  width: 85%;
+  margin: 50px auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  width: 320px;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.ratings span.checked {
+  color: orange;
+}
+
+.reviewer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 20px;
+}
+
+.avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviewer-details {
+  text-align: center;
+}
+
+.reviewer-details .desc {
+  font-size: 12px;
+  opacity: 0.8;
 }
