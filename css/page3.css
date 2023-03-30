@@ -1,3 +1,58 @@
 article {
   margin-top: 150px;
 }
+
+section {
+  padding: 30px 15%;
+}
+
+.row{
+  width: 100%;
+  padding: 50px 100px;
+}
+.content {
+	float: left;
+
+	width: 50%;
+	font-size: 0.9em;
+	margin: 0 0 20px 20px;
+	padding: 1%;
+	
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.img-section{
+  width: 30%;
+  text-align: center;
+  height: auto;
+}
+
+.img-section img{
+  width: 100%;
+  height: auto;
+}
+
+.contact-frm{
+vertical-align: top;
+text-align: center;
+}
+
+.contact-frm form input {
+width: 40%;
+padding: 5px;
+border: 1px solid gray;
+font-size: 1.1rem;
+margin-bottom: 0.7rem;
+}
+
+
+.contact-frm form textarea ,form input#input_tel,form input#input_email{
+  width: 80%;
+  padding: 5px;
+  border: 1px solid gray;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  }
