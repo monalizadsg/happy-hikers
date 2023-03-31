@@ -146,6 +146,81 @@
       allowfullscreen>
     </iframe>
     <!-- pricing -->
+    <div>
+      <h3>Pricing (Per Person)</h3>
+      <colgroup>
+        <col id="dest">
+        <col id="price">
+      </colgroup>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Destination</th>
+            <th colspan="4">Public</th>
+            <th >Private</th>
+          </tr>
+          <tr>
+            <th>1 Pax</th>
+            <th>2-4 Pax</th>
+            <th>5-7 Pax</th>
+            <th>8-9 Pax</th>
+            <th>Max 10 Pax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joffre Lake</td>
+            <td>110</td>
+            <td>104.5</td>
+            <td>99</td>
+            <td>93.5</td>
+            <td>880</td>
+          </tr>
+          <tr>
+            <td>Grouse Grind</td>
+            <td>70</td>
+            <td>66.5</td>
+            <td>63</td>
+            <td>59.5</td>
+            <td>560</td>
+          </tr>
+          <tr>
+            <td>Lynn Canyon</td>
+            <td>65</td>
+            <td>61.75</td>
+            <td>58.5</td>
+            <td>55.25</td>
+            <td>520</td>
+          </tr>
+          <tr>
+            <td>Panorama Ridge</td>
+            <td>180</td>
+            <td>171</td>
+            <td>162</td>
+            <td>153</td>
+            <td>1440</td>
+          </tr>
+          <tr>
+            <td>Quarry Rock</td>
+            <td>65</td>
+            <td>61.75</td>
+            <td>58.5</td>
+            <td>55.25</td>
+            <td>520</td>
+          </tr>
+          <tr>
+            <td>Golden Ears</td>
+            <td>75</td>
+            <td>71.25</td>
+            <td>67.5</td>
+            <td>63.75</td>
+            <td>600</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
 
     <!-- booking form -->
 
@@ -182,8 +257,20 @@
           <option value="Golden Ears">Golden Ears</option>
         </select>
         <br />
+        <label for="schedule">Schedule</label>
+        <select id="schedule" name="schedule" required>
+          <option value="June 10, 2023">June 10, 2023</option>
+          <option value="June 17, 2023">June 17, 2023</option>
+          <option value="June 24, 2023">June 24, 2023</option>
+          <option value="July 1, 2023">July 1, 2023</option>
+          <option value="July 8, 2023">July 8, 2023</option>
+          <option value="July 15, 2023">July 15, 2023</option>
+          <option value="July 22, 2023">July 22, 2023</option>
+          <option value="July 29, 2023">July 29, 2023</option>
+        </select>
+        <br />
         <label for="pax">Number of Person(s):</label>
-        <input type="number" id="pax" name="pax" min="1" max="10" required />
+        <input type="number" id="pax" name="pax" min="1" max="10" value="1" required/>
         <br />
         <label>Tour Option</label>
         <input type="radio" id="public" name="tour" value="Public" checked />
@@ -194,10 +281,10 @@
         <label>Price</label>
         <br />
         <label for="per_pax">Per Person:</label>
-        <input type="text" id="per_pax" name="per_pax" disabled />
+        <input type="text" id="per_pax" name="per_pax" value="110" disabled />
         <br />
         <label for="total">Total:</label>
-        <input type="text" id="total" name="total" disabled />
+        <input type="text" id="total" name="total" value="110" disabled />
         <br />
         <label for="note">Note:</label>
         <br />
@@ -247,5 +334,7 @@ Enter note here...</textarea
             </div>
            </div>
         </footer>
+        <!-- javascript -->
+        <script src="script/pricing.js"></script>
   </body>
 </html>
