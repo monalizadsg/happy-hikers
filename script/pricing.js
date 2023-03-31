@@ -1,9 +1,9 @@
-
+//Updating PAX in Form when changing from Private (10) to Public (9)
 function updatePax() {
     document.booking.pax.value = 9;
 }
 
-
+//Function for updating the total price and price per pax
 function updatePrice() {
     let pax = document.booking.pax.value;
     let dest = document.booking.destination.value;
@@ -75,4 +75,9 @@ function updatePrice() {
     //Updating value for total price
     document.booking.total.value = total;
 
+}
+
+//Function for sending alert after submitting booking
+function submitBooking(){
+    alert("Thank you for booking! An email will be sent for the payment instruction and other information for your trip. Have a joyful hike!")
 }
