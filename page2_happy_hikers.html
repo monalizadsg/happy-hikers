@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    
   </head>
 
   <body>
@@ -226,7 +227,7 @@
 
     <div>
       <h3>Booking & Reservations</h3>
-      <form class="booking" id="booking">
+      <form name="booking" id="booking">
         <h4>Personal Information</h4>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -248,7 +249,7 @@
         <br />
         <h4>Tour Information</h4>
         <label for="destination">Destination</label>
-        <select id="destination" name="destination" required>
+        <select id="destination" name="destination" onchange="updatePrice()" required>
           <option value="Joffre Lake">Joffre Lake</option>
           <option value="Grouse Grind">Grouse Grind</option>
           <option value="Lynn Canyon">Lynn Canyon</option>
@@ -270,12 +271,12 @@
         </select>
         <br />
         <label for="pax">Number of Person(s):</label>
-        <input type="number" id="pax" name="pax" min="1" max="10" value="1" required/>
+        <input type="number" id="pax" name="pax" min="1" max="10" value="1" onchange="updatePrice()" required/>
         <br />
         <label>Tour Option</label>
-        <input type="radio" id="public" name="tour" value="Public" checked />
+        <input type="radio" id="public" name="tour" value="Public" checked onchange="updatePrice()"/>
         <label for="public">Public</label>
-        <input type="radio" id="private" name="tour" value="Private" />
+        <input type="radio" id="private" name="tour" value="Private" onchange="updatePrice()"/>
         <label for="private">Private</label>
         <br />
         <label>Price</label>
@@ -335,6 +336,6 @@ Enter note here...</textarea
            </div>
         </footer>
         <!-- javascript -->
-        <script src="script/pricing.js"></script>
+    <script src="script/pricing.js"></script>
   </body>
 </html>
