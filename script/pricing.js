@@ -81,3 +81,8 @@ function updatePrice() {
 function submitBooking(){
     alert("Thank you for booking! An email will be sent for the payment instruction and other information for your trip. Have a joyful hike!")
 }
+
+//Redirect to Booking Form
+function redirectToBooking(){
+    document.getElementById("name").focus();
+}
