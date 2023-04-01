@@ -1,3 +1,4 @@
+/*about us*/
 article {
   margin-top: 150px;
 }
@@ -6,13 +7,12 @@ section {
   padding: 30px 15%;
 }
 
-.row{
+.row1{
   width: 100%;
   padding: 50px 100px;
 }
 .content {
 	float: left;
-
 	width: 50%;
 	font-size: 0.9em;
 	margin: 0 0 20px 20px;
@@ -25,34 +25,78 @@ section {
 }
 
 .img-section{
-  width: 30%;
+
   text-align: center;
-  height: auto;
+ }
+
+
+/* contact form */
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
 }
 
-.img-section img{
+div.contact-frm 
+{
+    display: block;
+}
+
+
+.contact-frm  {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 30px;
+  min-height: 40px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 70%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  
+}
+
+.contact-frm form textarea ,form input#input_tel,form input#input_email,form #input_name{
   width: 100%;
-  height: auto;
-}
-
-.contact-frm{
-vertical-align: top;
-text-align: center;
-}
-
-.contact-frm form input {
-width: 40%;
-padding: 5px;
-border: 1px solid gray;
-font-size: 1.1rem;
-margin-bottom: 0.7rem;
-}
-
-
-.contact-frm form textarea ,form input#input_tel,form input#input_email{
-  width: 80%;
-  padding: 5px;
-  border: 1px solid gray;
-  font-size: 1.1rem;
-  margin-bottom: 0.7rem;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  min-height: 40px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
+  label{
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+
+  input[type="submit"] {
+    background-color: #004643;
+    color: #e8e4e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #abd1c6;
+    color: #001e1d;
+  }
+  
+
+  

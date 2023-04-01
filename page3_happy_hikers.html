@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/page3.css" />
+
 </head>
 
 <body>
@@ -27,14 +28,13 @@
   </header>
   <article>
     <!-- about us -->
-    <div class="row">
+    <div class="row1">
     <div class="content">
 
       <h2>Our Story</h2><br>
-      <p>Welcome to our hiking community! We are a group of outdoor enthusiasts who are passionate about exploring the natural beauty of the world through hiking. We have created this website to share our love of hiking with others and to organize fun and adventurous hiking activities for people of all skill levels.</p><br>
-
-      <p>Our team is comprised of experienced hikers who have traversed some of the most challenging and scenic trails in the world. We believe that hiking is not only a great way to stay physically fit, but also an opportunity to connect with nature, learn about different cultures, and forge lifelong friendships. We are committed to creating a welcoming and inclusive environment where everyone can enjoy the great outdoors and discover the joys of hiking. Whether you are a seasoned hiker or just starting out, we invite you to join us on our hiking adventures and experience the thrill of exploration and discovery.</p><br>
-      <p>Group Members:</p>
+      <p style="text-align: justify; text-justify: inter-word;">Welcome to our hiking community! We are a group of outdoor enthusiasts who are passionate about exploring the natural beauty of the world through hiking. We have created this website to share our love of hiking with others and to organize fun and adventurous hiking activities for people of all skill levels.</p><br>
+      <p style="text-align: justify; text-justify: inter-word;">Our team is comprised of experienced hikers who have traversed some of the most challenging and scenic trails in the world. We believe that hiking is not only a great way to stay physically fit, but also an opportunity to connect with nature, learn about different cultures, and forge lifelong friendships. We are committed to creating a welcoming and inclusive environment where everyone can enjoy the great outdoors and discover the joys of hiking. Whether you are a seasoned hiker or just starting out, we invite you to join us on our hiking adventures and experience the thrill of exploration and discovery.</p><br>
+      <p style="text-align: justify; text-justify: inter-word;">Group Members:</p>
       <ul>
         <li>Milan Destura</li>
         <li>Monaliza Dasig</li>
@@ -51,17 +51,23 @@
     <section class="contact">
       <h2>Contact Us</h2><br>
       <p>If you have any questions or need help, please fill out the form below. We do our best to respond within 1 business day.</p><br>
-      <div class="contact-frm">
+      <div class="contact-frm" >
     
       <form action="">
-      <input type="text" placeholder="Last Name" /><input type="text" placeholder="First Name" /><br />
-      <input type="email" placeholder="Your Email" id="input_email"/><br />
-      <input type="tel" placeholder="Your Phone"  id="input_tel"/><br />
-      <textarea rows="6" cols="30" placeholder="Your Message" style="resize: none"></textarea><br />
-      <input type="submit" id="submit" value="Send Message" onclick="alert('Message Sent.')" />
+        <br><label for="phone">Name</label><br>
+      <input type="text"  id="input_name" required/><br>
+      <br><label for="phone">Email</label><br>
+      <input type="email"  id="input_email" required/><br />
+      <br><label for="phone">Phone</label><br>
+      <input type="tel"   id="input_tel"  pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required/><br />
+      <br><label for="phone">Message</label><br>
+      <textarea rows="6"  style="resize: none" required></textarea><br />
+      <center><input  type="submit" id="submit" value="Send Message" onclick="alert('Message Sent.')" /></center>
+      
     </form>
     </div>
     </section>
+   
   </article>
 
   <!-- footer -->
@@ -70,22 +76,22 @@
       <div class="row">
         <div class="footer-col">
           <h4>Happy Hikers</h4>
-          <p style="color:#bbbbbb;">We are a group of outdoor enthusiasts who have created a hiking website to organize fun and adventurous hiking activities for people of all skill levels. Our experienced team is committed to creating a welcoming and inclusive environment where everyone can enjoy the great outdoors and discover the joys of hiking.
+          <p style="color:#bbbbbb;text-align: justify; text-justify: inter-word; ">We are a group of outdoor enthusiasts who have created a hiking website to organize fun and adventurous hiking activities for people of all skill levels. Our experienced team is committed to creating a welcoming and inclusive environment where everyone can enjoy the great outdoors and discover the joys of hiking.
           </p>
         </div>
         <div class="footer-col">
           <h4>Privacy Policy</h4>
-          <p>We respect your privacy and will not share your personal information without your consent. Your information is used only for organizing hiking events and communication purposes.
+          <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">We respect your privacy and will not share your personal information without your consent. Your information is used only for organizing hiking events and communication purposes.
           </p>
         </div>
         <div class="footer-col">
           <h4>Terms of Use</h4>
-          <p>Our website content is protected, and you may not reproduce it without permission. We are not liable for any injuries or losses that may occur during our hiking activities. Participation is at your own risk.</p>
+          <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">Our website content is protected, and you may not reproduce it without permission. We are not liable for any injuries or losses that may occur during our hiking activities. Participation is at your own risk.</p>
         </div>
 
         <div class="footer-col">
           <h4>Disclaimer</h4>
-          <p>Our hiking activities have inherent risks, and participation is at your own risk. We take reasonable precautions, but we are not liable for any injuries or losses that may occur. By participating, you release us from any liability and hold us harmless.</p>
+          <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">Our hiking activities have inherent risks, and participation is at your own risk. We take reasonable precautions, but we are not liable for any injuries or losses that may occur. By participating, you release us from any liability and hold us harmless.</p>
         </div>
         <div class="footer-col"><br><br><br>
           <p style="color:#bbbbbb;">&copy; Copyright All rights reserved.  </p>
