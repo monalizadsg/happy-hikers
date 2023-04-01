@@ -1,0 +1,148 @@
+/* booking form */
+.booking-section {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.booking-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.booking-container h3 {
+  text-align: center;
+  color: #004643;
+}
+
+form#booking {
+  margin-top: 10px 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+form#booking h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form .booking-info {
+  display: flex;
+  flex-direction: row;
+}
+
+form .booking-info-col {
+  width: 50%;
+  padding: 30px;
+  padding-bottom: unset;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.field label {
+  padding-bottom: 5px;
+  font-size: 1em;
+}
+
+.field input,
+.field select {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 40px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.radio-field p {
+  font-size: 1em;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+radio-option:nth-child(2) {
+  margin-left: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+input[type="radio"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.two-field {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.two-field .field,
+.radio-field {
+  padding-bottom: unset;
+  width: 50%;
+}
+
+.two-field .field:first-child {
+  margin-right: 30px;
+}
+
+.booking-note,
+.booking-btn {
+  margin-top: 10px 35px;
+  padding: 0 30px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px 20px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.booking-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  background-color: #004643;
+  color: #e8e4e6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #abd1c6;
+  color: #001e1d;
+}
