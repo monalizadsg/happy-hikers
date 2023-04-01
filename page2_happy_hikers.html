@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beautiful British Columbia Hiking Tours</title>
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    
+    <link rel="stylesheet" href="css/page2.css" />
   </head>
 
   <body>
@@ -40,7 +40,7 @@
           id="dest-1"
           src="https://source.unsplash.com/Yq27A9Jx0Xg"
           alt="Joffre Lake"
-          />
+        />
         <br />
         <h3>Joffre Lake</h3>
         <ul>
@@ -54,9 +54,9 @@
       </div>
       <div class="d2">
         <img
-        id="dest-2"
-        src="https://source.unsplash.com/mote13K7X2E"
-        alt="Grouse Grind"
+          id="dest-2"
+          src="https://source.unsplash.com/mote13K7X2E"
+          alt="Grouse Grind"
         />
         <br />
         <h3>Grouse Grind</h3>
@@ -71,9 +71,9 @@
       </div>
       <div class="d3">
         <img
-        id="dest-2"
-        src="https://source.unsplash.com/u0Pt5XxuvBY"
-        alt="Lynn Canyon"
+          id="dest-2"
+          src="https://source.unsplash.com/u0Pt5XxuvBY"
+          alt="Lynn Canyon"
         />
         <br />
         <h3>Lynn Canyon</h3>
@@ -88,9 +88,9 @@
       </div>
       <div class="d1">
         <img
-        id="dest-2"
-        src="https://source.unsplash.com/6jFv6PoP7jA"
-        alt="Panorama Ridge"
+          id="dest-2"
+          src="https://source.unsplash.com/6jFv6PoP7jA"
+          alt="Panorama Ridge"
         />
         <br />
         <h3>Panorama Ridge</h3>
@@ -105,9 +105,9 @@
       </div>
       <div class="d5">
         <img
-        id="dest-2"
-        src="https://source.unsplash.com/o4Bbh68aGdg"
-        alt="Quarry Rock"
+          id="dest-2"
+          src="https://source.unsplash.com/o4Bbh68aGdg"
+          alt="Quarry Rock"
         />
         <br />
         <h3>Quarry Rock</h3>
@@ -122,9 +122,9 @@
       </div>
       <div class="d6">
         <img
-        id="dest-6"
-        src="https://source.unsplash.com/9rPQDqiTeMs"
-        alt="Golden Ears"
+          id="dest-6"
+          src="https://source.unsplash.com/9rPQDqiTeMs"
+          alt="Golden Ears"
         />
         <br />
         <h3>Golden Ears</h3>
@@ -139,26 +139,27 @@
       </div>
     </div>
     <!-- video -->
-    <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/CwdmViGgKPI" 
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/CwdmViGgKPI"
       frameborder="0"
-      allowfullscreen>
+      allowfullscreen
+    >
     </iframe>
     <!-- pricing -->
     <div>
       <h3>Pricing (Per Person)</h3>
       <colgroup>
-        <col id="dest">
-        <col id="price">
+        <col id="dest" />
+        <col id="price" />
       </colgroup>
       <table>
         <thead>
           <tr>
             <th rowspan="2">Destination</th>
             <th colspan="4">Public</th>
-            <th >Private</th>
+            <th>Private</th>
           </tr>
           <tr>
             <th>1 Pax</th>
@@ -217,125 +218,186 @@
             <td>63.75</td>
             <td>600</td>
           </tr>
-
         </tbody>
       </table>
     </div>
 
-
     <!-- booking form -->
-
-    <div>
-      <h3>Booking & Reservations</h3>
-      <form name="booking" id="booking">
-        <h4>Personal Information</h4>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <br />
-        <label for="bday">Birth Date:</label>
-        <input type="date" id="bday" name="bday" required />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <br />
-        <label for="phone">Contact Number:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          required
-          pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
-        />
-        <br />
-        <h4>Tour Information</h4>
-        <label for="destination">Destination</label>
-        <select id="destination" name="destination" onchange="updatePrice()" required>
-          <option value="Joffre Lake">Joffre Lake</option>
-          <option value="Grouse Grind">Grouse Grind</option>
-          <option value="Lynn Canyon">Lynn Canyon</option>
-          <option value="Panorama Ridge">Panorama Ridge</option>
-          <option value="Quarry Rock">Quarry Rock</option>
-          <option value="Golden Ears">Golden Ears</option>
-        </select>
-        <br />
-        <label for="schedule">Schedule</label>
-        <select id="schedule" name="schedule" required>
-          <option value="June 10, 2023">June 10, 2023</option>
-          <option value="June 17, 2023">June 17, 2023</option>
-          <option value="June 24, 2023">June 24, 2023</option>
-          <option value="July 1, 2023">July 1, 2023</option>
-          <option value="July 8, 2023">July 8, 2023</option>
-          <option value="July 15, 2023">July 15, 2023</option>
-          <option value="July 22, 2023">July 22, 2023</option>
-          <option value="July 29, 2023">July 29, 2023</option>
-        </select>
-        <br />
-        <label for="pax">Number of Person(s):</label>
-        <input type="number" id="pax" name="pax" min="1" max="10" value="1" onchange="updatePrice()" required/>
-        <br />
-        <label>Tour Option</label>
-        <input type="radio" id="public" name="tour" value="Public" checked onchange="updatePrice()"/>
-        <label for="public">Public</label>
-        <input type="radio" id="private" name="tour" value="Private" onchange="updatePrice()"/>
-        <label for="private">Private</label>
-        <br />
-        <label>Price</label>
-        <br />
-        <label for="per_pax">Per Person:</label>
-        <input type="text" id="per_pax" name="per_pax" value="110" disabled />
-        <br />
-        <label for="total">Total:</label>
-        <input type="text" id="total" name="total" value="110" disabled />
-        <br />
-        <label for="note">Note:</label>
-        <br />
-        <textarea name="note" id="note" form="booking" rows="5" cols="40">
-Enter note here...</textarea
-        >
-        <br />
-        <input type="submit" id="submit" value="Book Now" />
-      </form>
-    </div>
-        <!-- footer -->
-        <footer class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="footer-col">
-                <h4>Happy Hikers</h4>
-                <p style="color:#bbbbbb;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                </p>
+    <section class="booking-section">
+      <img src="images/hiking_art.png" alt="hiking illustration" height="500" />
+      <div class="booking-container">
+        <h3>Booking & Reservations</h3>
+        <form name="booking" id="booking">
+          <div class="booking-info">
+            <div class="booking-info-col">
+              <h4>Personal Information</h4>
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
               </div>
-              <div class="footer-col">
-                <h4>Privacy Policy</h4>
-                <ul>
-                </ul>
+              <div class="field">
+                <label for="bday">Birth Date</label>
+                <input type="date" id="bday" name="bday" required />
               </div>
-              <div class="footer-col">
-                <h4>Terms of Use</h4>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
               </div>
-    
-              <div class="footer-col">
-                <h4>Disclaimer</h4>
+              <div class="field">
+                <label for="phone">Contact Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                />
               </div>
-              <div class="footer-col"><br><br><br>
-                <p style="color:#bbbbbb;">&copy; Copyright All rights reserved.  </p>
+            </div>
+            <div class="booking-info-col">
+              <h4>Tour Information</h4>
+              <div class="field">
+                <label for="destination">Destination</label>
+                <select
+                  id="destination"
+                  name="destination"
+                  onchange="updatePrice()"
+                  required
+                >
+                  <option value="Joffre Lake">Joffre Lake</option>
+                  <option value="Grouse Grind">Grouse Grind</option>
+                  <option value="Lynn Canyon">Lynn Canyon</option>
+                  <option value="Panorama Ridge">Panorama Ridge</option>
+                  <option value="Quarry Rock">Quarry Rock</option>
+                  <option value="Golden Ears">Golden Ears</option>
+                </select>
               </div>
-              <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                  <a href="#"><i class="fa fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-snapchat-ghost"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
+              <div class="field">
+                <label for="schedule">Schedule</label>
+                <select id="schedule" name="schedule" required>
+                  <option value="June 10, 2023">June 10, 2023</option>
+                  <option value="June 17, 2023">June 17, 2023</option>
+                  <option value="June 24, 2023">June 24, 2023</option>
+                  <option value="July 1, 2023">July 1, 2023</option>
+                  <option value="July 8, 2023">July 8, 2023</option>
+                  <option value="July 15, 2023">July 15, 2023</option>
+                  <option value="July 22, 2023">July 22, 2023</option>
+                  <option value="July 29, 2023">July 29, 2023</option>
+                </select>
+              </div>
+              <div class="two-field">
+                <div class="field">
+                  <label for="pax">Number of Person(s)</label>
+                  <input
+                    type="number"
+                    id="pax"
+                    name="pax"
+                    min="1"
+                    max="10"
+                    value="1"
+                    onchange="updatePrice()"
+                    required
+                  />
+                </div>
+                <div class="radio-field">
+                  <p>Tour Option</p>
+                  <div class="radio-options">
+                    <div class="radio-option">
+                      <input
+                        type="radio"
+                        id="public"
+                        name="tour"
+                        value="Public"
+                        checked
+                        onchange="updatePrice()"
+                      />
+                      <label for="public">Public</label>
+                    </div>
+                    <div class="radio-option">
+                      <input
+                        type="radio"
+                        id="private"
+                        name="tour"
+                        value="Private"
+                        onchange="updatePrice()"
+                      />
+                      <label for="private">Private</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="two-field">
+                <div class="field">
+                  <label for="per_pax">Price Per Person</label>
+                  <input type="text" id="per_pax" name="per_pax" disabled />
+                </div>
+                <div class="field">
+                  <label for="total">Total</label>
+                  <input type="text" id="total" name="total" disabled />
                 </div>
               </div>
             </div>
-           </div>
-        </footer>
-        <!-- javascript -->
+          </div>
+          <div class="booking-note">
+            <label for="note">Note</label>
+            <textarea
+              name="note"
+              id="note"
+              form="booking"
+              rows="5"
+              cols="40"
+              placeholder="Enter note here..."
+            >
+            </textarea>
+          </div>
+          <div class="booking-btn">
+            <input type="submit" id="submit" value="Book Now" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Happy Hikers</h4>
+            <p style="color: #bbbbbb">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Privacy Policy</h4>
+            <ul></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Terms of Use</h4>
+          </div>
+
+          <div class="footer-col">
+            <h4>Disclaimer</h4>
+          </div>
+          <div class="footer-col">
+            <br /><br /><br />
+            <p style="color: #bbbbbb">&copy; Copyright All rights reserved.</p>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-snapchat-ghost"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- javascript -->
     <script src="script/pricing.js"></script>
   </body>
 </html>
