@@ -24,7 +24,8 @@ header .logo {
 
 header nav {
   position: relative;
-  padding: 0 20px;
+  padding: 0 25px;
+  padding-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -37,8 +38,8 @@ header nav ul {
 
 header nav ul a {
   position: relative;
-  color: #094067;
-  font-size: 1em;
+  color: #1c4d70;
+  font-size: 1.3em;
   font-weight: 600;
   margin-left: 30px;
   transition: 0.3s ease;
@@ -49,7 +50,7 @@ header nav ul a {
 header nav ul a:before {
   content: "";
   position: absolute;
-  background: #094067;
+  background: #1c4d70;
   width: 0;
   height: 3px;
   bottom: 0;
@@ -63,8 +64,9 @@ header nav ul a:hover:before {
 
 /* services */
 section.services {
-  padding: 50px 0;
-  background-color: #f8efe5;
+  padding: 80px 0;
+  background-color: #8dc6ff;
+  background-image: linear-gradient(62deg, #b1d6fa 0%, #fdfdfd 100%);
 }
 
 section.services .s-title,
@@ -77,6 +79,8 @@ section.reviews h3 {
 section.services .s-desc {
   text-align: center;
   font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.5em;
 }
 
 .services-boxes {
@@ -99,8 +103,20 @@ section.services .s-desc {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-/* .service span {
-} */
+.icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-map-location-dot,
+.fa-sack-dollar,
+.fa-people-roof {
+  color: #05a8a0;
+  font-size: 4em;
+}
 
 .service p.title {
   font-weight: 500;
@@ -119,9 +135,8 @@ section.reviews {
 }
 
 .reviews-boxes {
-  width: 85%;
+  width: 65%;
   margin: 50px auto;
-
   display: flex;
   justify-content: space-between;
 }
@@ -168,22 +183,22 @@ section.reviews {
 }
 
 /* footer */
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
 }
-ul{
+ul {
   list-style: none;
 }
-.footer{
+.footer {
   background-color: #24262b;
-    padding: 70px 0;
+  padding: 70px 0;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-col h4{
+.footer-col h4 {
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
@@ -191,20 +206,20 @@ ul{
   font-weight: 500;
   position: relative;
 }
-.footer-col h4::before{
-  content: '';
+.footer-col h4::before {
+  content: "";
   position: absolute;
-  left:0;
+  left: 0;
   bottom: -10px;
   background-color: #3c94cf;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
 }
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -214,23 +229,23 @@ ul{
   display: block;
   transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
 }
-.footer-col .social-links a{
+.footer-col .social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
   color: #ffffff;
   transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+.footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
 }

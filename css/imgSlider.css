@@ -5,14 +5,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #215883;
+  background: #8dc6ff;
 }
 
 .slider:before {
   z-index: 777;
   content: "";
   position: absolute;
-  background: rgba(3, 96, 251, 0.3);
+  background: rgba(136, 177, 248, 0.3);
   width: 100%;
   height: 100%;
   top: 0;
