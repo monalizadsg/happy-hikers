@@ -10,6 +10,36 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/page3.css" />
+  <script >
+
+function sendMessage(){
+Email.send({
+Host :"smtp.elasticemail.com:2525", 
+Username: "milan.destura620@gmail.com",
+Password: "60A4F26251AE832BF37F8B1822CA319CA3D7", 
+To: 'milan.destura007@gmail.com', 
+From: "milan.destura620@gmail.com",
+Subject: "This is the subject",
+Body: "And this is the body"
+
+}).then(
+message => alert(message)
+);
+
+}
+
+function validate(){
+
+
+
+  var name = document.getElementById("input_name").value;
+  var phone = document.getElementById("input_tel").value;
+  var email = document.getElementById("input_email").value;
+
+  alert(name);
+}
+  </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 
@@ -53,7 +83,7 @@
       <p>If you have any questions or need help, please fill out the form below. We do our best to respond within 1 business day.</p><br>
       <div class="contact-frm" >
     
-      <form action="">
+      <form name="contact_form" method="post" onsubmit="sendMessage()" >
         <br><label for="phone">Name</label><br>
       <input type="text"  id="input_name" required/><br>
       <br><label for="phone">Email</label><br>
@@ -62,7 +92,7 @@
       <input type="tel"   id="input_tel"  pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required/><br />
       <br><label for="phone">Message</label><br>
       <textarea rows="6"  style="resize: none" required></textarea><br />
-      <center><input  type="submit" id="submit" value="Send Message" onclick="alert('Message Sent.')" /></center>
+      <center><input   type="submit" id="submit" value="Send Message" onclick="validate()" /></center>
       
     </form>
     </div>
