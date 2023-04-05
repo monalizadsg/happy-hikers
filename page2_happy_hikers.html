@@ -267,21 +267,21 @@
         />
         <div class="booking-container">
           <h3>Booking & Reservations</h3>
-          <form name="booking" id="booking">
+          <form name="booking" id="booking" onsubmit="return validateForm()">
             <div class="booking-info">
               <div class="booking-info-col">
                 <h4>Personal Information</h4>
                 <div class="field">
                   <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required />
+                  <input type="text" id="name" name="name" />
                 </div>
                 <div class="field">
                   <label for="bday">Birth Date</label>
-                  <input type="date" id="bday" name="bday" required />
+                  <input type="date" id="bday" name="bday" />
                 </div>
                 <div class="field">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
+                  <input type="email" id="email" name="email" />
                 </div>
                 <div class="field">
                   <label for="phone">Contact Number</label>
@@ -289,7 +289,6 @@
                     type="tel"
                     id="phone"
                     name="phone"
-                    required
                     pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
                   />
                 </div>
@@ -302,7 +301,6 @@
                     id="destination"
                     name="destination"
                     onchange="updatePrice()"
-                    required
                   >
                     <option value="Joffre Lake">Joffre Lake</option>
                     <option value="Grouse Grind">Grouse Grind</option>
@@ -314,7 +312,7 @@
                 </div>
                 <div class="field">
                   <label for="schedule">Schedule</label>
-                  <select id="schedule" name="schedule" required>
+                  <select id="schedule" name="schedule">
                     <option value="June 10, 2023">June 10, 2023</option>
                     <option value="June 17, 2023">June 17, 2023</option>
                     <option value="June 24, 2023">June 24, 2023</option>
@@ -336,7 +334,6 @@
                       max="10"
                       value="1"
                       onchange="updatePrice()"
-                      required
                     />
                   </div>
                   <div class="radio-field">
@@ -483,5 +480,6 @@
     </footer>
     <!-- javascript -->
     <script src="script/pricing.js"></script>
+    <script src="script/bookingform.js"></script>
   </body>
 </html>
