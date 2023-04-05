@@ -15,6 +15,7 @@ article {
   gap: 50px;
   width: 80%;
   margin: 30px auto;
+  padding-bottom: 50px;
 }
 
 .destination-grid {
@@ -104,12 +105,63 @@ article {
   border: 3px solid #248277;
 }
 
+.vid-table-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 60px 0;
+  background-color: #f7f9fe;
+}
+
+/* table */
+.pricing-table {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 30px 0;
+  height: 450px;
+}
+
+.pricing-table h3 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #004643;
+}
+
+.pricing-table table {
+  margin-top: 30px;
+  height: auto;
+}
+
+table thead tr th {
+  padding: 5px;
+}
+
+table tbody tr td {
+  text-align: center;
+  padding: 12px;
+}
+
+table th,
+table td {
+  font-size: 1.2em;
+}
+
+/* video */
+iframe {
+  width: 50%;
+  height: 600px;
+}
+
 /* booking form */
 .booking-section {
   display: flex;
   align-items: center;
-  margin: 50px;
-  padding: 20px;
+  margin: 80px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
