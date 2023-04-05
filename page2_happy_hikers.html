@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/page2.css" />
-    
   </head>
 
   <body>
@@ -33,309 +32,371 @@
         </ul>
       </nav>
     </header>
-
-    <!-- destination -->
-    <div class="destination_grid">
-      <div class="d1">
-        <img
-          id="dest-1"
-          src="https://source.unsplash.com/Yq27A9Jx0Xg"
-          alt="Joffre Lake"
-        />
-        <br />
-        <h3>Joffre Lake</h3>
-        <ul>
-          <li>Location: Pemberton</li>
-          <li>Distance: 7.5 KM</li>
-          <li>Difficulty: Moderate</li>
-          <li>Time: 4.5 Hours</li>
-        </ul>
-        <h4>$110/Person</h4>
-        <button onclick="redirectToBooking()">Book</button>
-      </div>
-      <div class="d2">
-        <img
-          id="dest-2"
-          src="https://source.unsplash.com/mote13K7X2E"
-          alt="Grouse Grind"
-        />
-        <br />
-        <h3>Grouse Grind</h3>
-        <ul>
-          <li>Location: North Vancouver</li>
-          <li>Distance: 6 KM</li>
-          <li>Difficulty: Difficult</li>
-          <li>Time: 2 Hours</li>
-        </ul>
-        <h4>$70/Person</h4>
-        <button onclick="redirectToBooking()">Book</button>
-      </div>
-      <div class="d3">
-        <img
-          id="dest-2"
-          src="https://source.unsplash.com/u0Pt5XxuvBY"
-          alt="Lynn Canyon"
-        />
-        <br />
-        <h3>Lynn Canyon</h3>
-        <ul>
-          <li>Location: North Vancouver</li>
-          <li>Distance: 5.2 KM</li>
-          <li>Difficulty: Easy</li>
-          <li>Time: 1.5 Hours</li>
-        </ul>
-        <h4>$65/Person</h4>
-        <button onclick="redirectToBooking()">Book</button>
-      </div>
-      <div class="d1">
-        <img
-          id="dest-2"
-          src="https://source.unsplash.com/6jFv6PoP7jA"
-          alt="Panorama Ridge"
-        />
-        <br />
-        <h3>Panorama Ridge</h3>
-        <ul>
-          <li>Location: Whistler</li>
-          <li>Distance: 30 KM</li>
-          <li>Difficulty: Difficult</li>
-          <li>Time: 12 Hours</li>
-        </ul>
-        <h4>$180/Person</h4>
-        <button onclick="redirectToBooking()">Book</button>
-      </div>
-      <div class="d5">
-        <img
-          id="dest-2"
-          src="https://source.unsplash.com/o4Bbh68aGdg"
-          alt="Quarry Rock"
-        />
-        <br />
-        <h3>Quarry Rock</h3>
-        <ul>
-          <li>Location: North Vancouver</li>
-          <li>Distance: 4 KM</li>
-          <li>Difficulty: Easy</li>
-          <li>Time: 1.5 Hours</li>
-        </ul>
-        <h4>$65/Person</h4>
-        <button onclick="redirectToBooking()">Book</button>
-      </div>
-      <div class="d6">
-        <img
-          id="dest-6"
-          src="https://source.unsplash.com/9rPQDqiTeMs"
-          alt="Golden Ears"
-        />
-        <br />
-        <h3>Golden Ears</h3>
-        <ul>
-          <li>Location: Ridge Meadows</li>
-          <li>Distance: 24 KM</li>
-          <li>Difficulty: Difficult</li>
-          <li>Time: 13 Hours</li>
-        </ul>
-        <h4>$75/Person</h4>
-        <button onclick="redirectToBooking()">Book</button>
-      </div>
-    </div>
-    <!-- video -->
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/CwdmViGgKPI"
-      frameborder="0"
-      allowfullscreen
-    >
-    </iframe>
-    <!-- pricing -->
-    <div>
-      <h3>Pricing (Per Person)</h3>
-      <colgroup>
-        <col id="dest" />
-        <col id="price" />
-      </colgroup>
-      <table>
-        <thead>
-          <tr>
-            <th rowspan="2">Destination</th>
-            <th>Public</th>
-            <th>Private</th>
-          </tr>
-          <tr>
-            <th>1-9 Pax</th>
-            <th>Up tp 10 Pax</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Joffre Lake</td>
-            <td>110</td>
-            <td>880</td>
-          </tr>
-          <tr>
-            <td>Grouse Grind</td>
-            <td>70</td>
-            <td>560</td>
-          </tr>
-          <tr>
-            <td>Lynn Canyon</td>
-            <td>65</td>
-            <td>520</td>
-          </tr>
-          <tr>
-            <td>Panorama Ridge</td>
-            <td>180</td>
-            <td>1440</td>
-          </tr>
-          <tr>
-            <td>Quarry Rock</td>
-            <td>65</td>
-            <td>520</td>
-          </tr>
-          <tr>
-            <td>Golden Ears</td>
-            <td>75</td>
-            <td>600</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- booking form -->
-    <section class="booking-section">
-      <img src="images/hiking_art.png" alt="hiking illustration" height="500" />
-      <div class="booking-container">
-        <h3>Booking & Reservations</h3>
-        <form name="booking" id="booking">
-          <div class="booking-info">
-            <div class="booking-info-col">
-              <h4>Personal Information</h4>
-              <div class="field">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="field">
-                <label for="bday">Birth Date</label>
-                <input type="date" id="bday" name="bday" required />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="field">
-                <label for="phone">Contact Number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
-                />
-              </div>
+    <article>
+      <section class="banner">
+        <img src="images/destinations_banner.png" alt="banner" />
+      </section>
+      <!-- destination -->
+      <section class="destination-container">
+        <div class="destination-grid">
+          <div class="img-container">
+            <img
+              id="dest-1"
+              src="https://source.unsplash.com/Yq27A9Jx0Xg"
+              alt="Joffre Lake"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="details">
+            <div class="details-col">
+              <h3>Joffre Lake</h3>
+              <ul>
+                <li>Location: Pemberton</li>
+                <li>Distance: 7.5 KM</li>
+                <li>Difficulty: Moderate</li>
+                <li>Time: 4.5 Hours</li>
+              </ul>
             </div>
-            <div class="booking-info-col">
-              <h4>Tour Information</h4>
-              <div class="field">
-                <label for="destination">Destination</label>
-                <select
-                  id="destination"
-                  name="destination"
-                  onchange="updatePrice()"
-                  required
-                >
-                  <option value="Joffre Lake">Joffre Lake</option>
-                  <option value="Grouse Grind">Grouse Grind</option>
-                  <option value="Lynn Canyon">Lynn Canyon</option>
-                  <option value="Panorama Ridge">Panorama Ridge</option>
-                  <option value="Quarry Rock">Quarry Rock</option>
-                  <option value="Golden Ears">Golden Ears</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="schedule">Schedule</label>
-                <select id="schedule" name="schedule" required>
-                  <option value="June 10, 2023">June 10, 2023</option>
-                  <option value="June 17, 2023">June 17, 2023</option>
-                  <option value="June 24, 2023">June 24, 2023</option>
-                  <option value="July 1, 2023">July 1, 2023</option>
-                  <option value="July 8, 2023">July 8, 2023</option>
-                  <option value="July 15, 2023">July 15, 2023</option>
-                  <option value="July 22, 2023">July 22, 2023</option>
-                  <option value="July 29, 2023">July 29, 2023</option>
-                </select>
-              </div>
-              <div class="two-field">
+            <div class="details-col">
+              <h4>$110<span>/Person</span></h4>
+              <button onclick="redirectToBooking()">Book</button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-grid">
+          <div class="img-container">
+            <img
+              id="dest-2"
+              src="https://source.unsplash.com/mote13K7X2E"
+              alt="Grouse Grind"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="details">
+            <div class="details-col">
+              <h3>Grouse Grind</h3>
+              <ul>
+                <li>Location: North Vancouver</li>
+                <li>Distance: 6 KM</li>
+                <li>Difficulty: Difficult</li>
+                <li>Time: 2 Hours</li>
+              </ul>
+            </div>
+            <div class="details-col">
+              <h4>$70<span>/Person</span></h4>
+              <button onclick="redirectToBooking()">Book</button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-grid">
+          <div class="img-container">
+            <img
+              id="dest-2"
+              src="https://source.unsplash.com/u0Pt5XxuvBY"
+              alt="Lynn Canyon"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="details">
+            <div class="details-col">
+              <h3>Lynn Canyon</h3>
+              <ul>
+                <li>Location: North Vancouver</li>
+                <li>Distance: 5.2 KM</li>
+                <li>Difficulty: Easy</li>
+                <li>Time: 1.5 Hours</li>
+              </ul>
+            </div>
+            <div class="details-col">
+              <h4>$65<span>/Person</span></h4>
+              <button onclick="redirectToBooking()">Book</button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-grid">
+          <div class="img-container">
+            <img
+              id="dest-2"
+              src="https://source.unsplash.com/6jFv6PoP7jA"
+              alt="Panorama Ridge"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="details">
+            <div class="details-col">
+              <h3>Panorama Ridge</h3>
+              <ul>
+                <li>Location: Whistler</li>
+                <li>Distance: 30 KM</li>
+                <li>Difficulty: Difficult</li>
+                <li>Time: 12 Hours</li>
+              </ul>
+            </div>
+            <div class="details-col">
+              <h4>$180<span>/Person</span></h4>
+              <button onclick="redirectToBooking()">Book</button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-grid">
+          <div class="img-container">
+            <img
+              id="dest-2"
+              src="https://source.unsplash.com/o4Bbh68aGdg"
+              alt="Quarry Rock"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="details">
+            <div class="details-col">
+              <h3>Quarry Rock</h3>
+              <ul>
+                <li>Location: North Vancouver</li>
+                <li>Distance: 4 KM</li>
+                <li>Difficulty: Easy</li>
+                <li>Time: 1.5 Hours</li>
+              </ul>
+            </div>
+            <div class="details-col">
+              <h4>$65<span>/Person</span></h4>
+              <button onclick="redirectToBooking()">Book</button>
+            </div>
+          </div>
+        </div>
+        <div class="destination-grid">
+          <div class="img-container">
+            <img
+              id="dest-6"
+              src="https://source.unsplash.com/9rPQDqiTeMs"
+              alt="Golden Ears"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="details">
+            <div class="details-col">
+              <h3>Golden Ears</h3>
+              <ul>
+                <li>Location: Ridge Meadows</li>
+                <li>Distance: 24 KM</li>
+                <li>Difficulty: Difficult</li>
+                <li>Time: 13 Hours</li>
+              </ul>
+            </div>
+            <div class="details-col">
+              <h4>$75<span>/Person</span></h4>
+              <button onclick="redirectToBooking()">Book</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- video -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/CwdmViGgKPI"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+      <!-- pricing -->
+      <section>
+        <h3>Pricing (Per Person)</h3>
+        <colgroup>
+          <col id="dest" />
+          <col id="price" />
+        </colgroup>
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Destination</th>
+              <th>Public</th>
+              <th>Private</th>
+            </tr>
+            <tr>
+              <th>1-9 Pax</th>
+              <th>Up tp 10 Pax</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Joffre Lake</td>
+              <td>110</td>
+              <td>880</td>
+            </tr>
+            <tr>
+              <td>Grouse Grind</td>
+              <td>70</td>
+              <td>560</td>
+            </tr>
+            <tr>
+              <td>Lynn Canyon</td>
+              <td>65</td>
+              <td>520</td>
+            </tr>
+            <tr>
+              <td>Panorama Ridge</td>
+              <td>180</td>
+              <td>1440</td>
+            </tr>
+            <tr>
+              <td>Quarry Rock</td>
+              <td>65</td>
+              <td>520</td>
+            </tr>
+            <tr>
+              <td>Golden Ears</td>
+              <td>75</td>
+              <td>600</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- booking form -->
+      <section class="booking-section">
+        <img
+          src="images/hiking_art.png"
+          alt="hiking illustration"
+          height="500"
+        />
+        <div class="booking-container">
+          <h3>Booking & Reservations</h3>
+          <form name="booking" id="booking">
+            <div class="booking-info">
+              <div class="booking-info-col">
+                <h4>Personal Information</h4>
                 <div class="field">
-                  <label for="pax">Number of Person(s)</label>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="field">
+                  <label for="bday">Birth Date</label>
+                  <input type="date" id="bday" name="bday" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Contact Number</label>
                   <input
-                    type="number"
-                    id="pax"
-                    name="pax"
-                    min="1"
-                    max="10"
-                    value="1"
-                    onchange="updatePrice()"
+                    type="tel"
+                    id="phone"
+                    name="phone"
                     required
+                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
                   />
                 </div>
-                <div class="radio-field">
-                  <p>Tour Option</p>
-                  <div class="radio-options">
-                    <div class="radio-option">
-                      <input
-                        type="radio"
-                        id="public"
-                        name="tour"
-                        value="Public"
-                        checked
-                        onchange="updatePax();updatePrice();"
-                      />
-                      <label for="public">Public</label>
-                    </div>
-                    <div class="radio-option">
-                      <input
-                        type="radio"
-                        id="private"
-                        name="tour"
-                        value="Private"
-                        onchange="updatePrice()"
-                      />
-                      <label for="private">Private</label>
+              </div>
+              <div class="booking-info-col">
+                <h4>Tour Information</h4>
+                <div class="field">
+                  <label for="destination">Destination</label>
+                  <select
+                    id="destination"
+                    name="destination"
+                    onchange="updatePrice()"
+                    required
+                  >
+                    <option value="Joffre Lake">Joffre Lake</option>
+                    <option value="Grouse Grind">Grouse Grind</option>
+                    <option value="Lynn Canyon">Lynn Canyon</option>
+                    <option value="Panorama Ridge">Panorama Ridge</option>
+                    <option value="Quarry Rock">Quarry Rock</option>
+                    <option value="Golden Ears">Golden Ears</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="schedule">Schedule</label>
+                  <select id="schedule" name="schedule" required>
+                    <option value="June 10, 2023">June 10, 2023</option>
+                    <option value="June 17, 2023">June 17, 2023</option>
+                    <option value="June 24, 2023">June 24, 2023</option>
+                    <option value="July 1, 2023">July 1, 2023</option>
+                    <option value="July 8, 2023">July 8, 2023</option>
+                    <option value="July 15, 2023">July 15, 2023</option>
+                    <option value="July 22, 2023">July 22, 2023</option>
+                    <option value="July 29, 2023">July 29, 2023</option>
+                  </select>
+                </div>
+                <div class="two-field">
+                  <div class="field">
+                    <label for="pax">Number of Person(s)</label>
+                    <input
+                      type="number"
+                      id="pax"
+                      name="pax"
+                      min="1"
+                      max="10"
+                      value="1"
+                      onchange="updatePrice()"
+                      required
+                    />
+                  </div>
+                  <div class="radio-field">
+                    <p>Tour Option</p>
+                    <div class="radio-options">
+                      <div class="radio-option">
+                        <input
+                          type="radio"
+                          id="public"
+                          name="tour"
+                          value="Public"
+                          checked
+                          onchange="updatePax();updatePrice();"
+                        />
+                        <label for="public">Public</label>
+                      </div>
+                      <div class="radio-option">
+                        <input
+                          type="radio"
+                          id="private"
+                          name="tour"
+                          value="Private"
+                          onchange="updatePrice()"
+                        />
+                        <label for="private">Private</label>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="two-field">
-                <div class="field">
-                  <label for="per_pax">Price Per Person</label>
-                  <input type="text" id="per_pax" name="per_pax" disabled />
-                </div>
-                <div class="field">
-                  <label for="total">Total</label>
-                  <input type="text" id="total" name="total" disabled />
+                <div class="two-field">
+                  <div class="field">
+                    <label for="per_pax">Price Per Person</label>
+                    <input type="text" id="per_pax" name="per_pax" disabled />
+                  </div>
+                  <div class="field">
+                    <label for="total">Total</label>
+                    <input type="text" id="total" name="total" disabled />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="booking-note">
-            <label for="note">Note</label>
-            <textarea
-              name="note"
-              id="note"
-              form="booking"
-              rows="5"
-              cols="40"
-              placeholder="Enter note here..."
-            >
-            </textarea>
-          </div>
-          <div class="booking-btn">
-            <input type="submit" id="submit" value="Book Now" />
-          </div>
-        </form>
-      </div>
-    </section>
+            <div class="booking-note">
+              <label for="note">Note</label>
+              <textarea
+                name="note"
+                id="note"
+                form="booking"
+                rows="5"
+                cols="40"
+                placeholder="Enter note here..."
+              >
+              </textarea>
+            </div>
+            <div class="booking-btn">
+              <input type="submit" id="submit" value="Book Now" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </article>
 
     <!-- footer -->
     <footer class="footer">
@@ -343,7 +404,13 @@
         <div class="row">
           <div class="footer-col">
             <h4>Happy Hikers</h4>
-            <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">
+            <p
+              style="
+                color: #bbbbbb;
+                text-align: justify;
+                text-justify: inter-word;
+              "
+            >
               We are a group of outdoor enthusiasts who have created a hiking
               website to organize fun and adventurous hiking activities for
               people of all skill levels. Our experienced team is committed to
@@ -353,7 +420,13 @@
           </div>
           <div class="footer-col">
             <h4>Privacy Policy</h4>
-            <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">
+            <p
+              style="
+                color: #bbbbbb;
+                text-align: justify;
+                text-justify: inter-word;
+              "
+            >
               We respect your privacy and will not share your personal
               information without your consent. Your information is used only
               for organizing hiking events and communication purposes.
@@ -361,7 +434,13 @@
           </div>
           <div class="footer-col">
             <h4>Terms of Use</h4>
-            <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">
+            <p
+              style="
+                color: #bbbbbb;
+                text-align: justify;
+                text-justify: inter-word;
+              "
+            >
               Our website content is protected, and you may not reproduce it
               without permission. We are not liable for any injuries or losses
               that may occur during our hiking activities. Participation is at
@@ -371,7 +450,13 @@
 
           <div class="footer-col">
             <h4>Disclaimer</h4>
-            <p style="color:#bbbbbb; text-align: justify; text-justify: inter-word;">
+            <p
+              style="
+                color: #bbbbbb;
+                text-align: justify;
+                text-justify: inter-word;
+              "
+            >
               Our hiking activities have inherent risks, and participation is at
               your own risk. We take reasonable precautions, but we are not
               liable for any injuries or losses that may occur. By
