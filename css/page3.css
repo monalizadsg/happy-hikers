@@ -7,44 +7,39 @@ section {
   padding: 30px 15%;
 }
 
-.row1{
+.row1 {
   width: 100%;
   padding: 50px 100px;
 }
 .content {
-	float: left;
-	width: 50%;
-	font-size: 0.9em;
-	margin: 0 0 20px 20px;
-	padding: 1%;
-	
+  float: left;
+  width: 50%;
+  font-size: 0.9em;
+  margin: 0 0 20px 20px;
+  padding: 1%;
 }
 
 .content h2 {
   text-align: center;
 }
 
-.img-section{
-
+.img-section {
   text-align: center;
- }
-
+}
 
 /* contact form */
-h2{
+h2 {
   text-align: center;
 }
-p{
+p {
   text-align: center;
 }
 
-div.contact-frm 
-{
-    display: block;
+div.contact-frm {
+  display: block;
 }
 
-
-.contact-frm  {
+.contact-frm {
   font-size: 16px;
   line-height: 24px;
   padding: 20px 30px;
@@ -59,11 +54,12 @@ div.contact-frm
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-
-  
 }
 
-.contact-frm form textarea ,form input#input_tel,form input#input_email,form #input_name{
+.contact-frm form textarea,
+form input#input_tel,
+form input#input_email,
+form #input_name {
   width: 100%;
   font-size: 16px;
   line-height: 24px;
@@ -74,29 +70,24 @@ div.contact-frm
   outline-color: rgb(84 105 212 / 0.5);
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  }
-  label{
-    text-align: left;
-    vertical-align: top;
-  }
+}
+label {
+  text-align: left;
+  vertical-align: top;
+}
 
+input[type="submit"] {
+  color: #248277;
+  border: none;
+  background-image: linear-gradient(62deg, #469d89 0%, #99e2b4 100%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
 
-
-  input[type="submit"] {
-    background-color: #004643;
-    color: #e8e4e6;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    border: 0;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #abd1c6;
-    color: #001e1d;
-  }
-  
-
-  
+input[type="submit"]:hover {
+  color: #fff;
+}
