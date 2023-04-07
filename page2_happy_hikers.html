@@ -237,11 +237,22 @@
       </section>
       <!-- booking form -->
       <section class="booking-section">
-        <img
+        <iframe 
+          id="map"
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!--<img
           src="images/hiking_art.png"
           alt="hiking illustration"
           height="500"
+        
         />
+        -->
         <div class="booking-container">
           <h3>Booking & Reservations</h3>
           <form name="booking" id="booking" onsubmit="return validateForm()">
@@ -277,7 +288,7 @@
                   <select
                     id="destination"
                     name="destination"
-                    onchange="updatePrice()"
+                    onchange="updatePrice();updateMap()"
                   >
                     <option value="Joffre Lake">Joffre Lake</option>
                     <option value="Grouse Grind">Grouse Grind</option>
@@ -427,5 +438,7 @@
     <!-- javascript -->
     <script src="script/pricing.js"></script>
     <script src="script/bookingform.js"></script>
+    <script src="script/map.js"></script>
+
   </body>
 </html>
