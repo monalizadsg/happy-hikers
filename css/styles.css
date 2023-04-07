@@ -39,7 +39,7 @@ header nav ul {
 header nav ul a {
   position: relative;
   color: #1c4d70;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
   margin-left: 30px;
   transition: 0.3s ease;
@@ -62,125 +62,72 @@ header nav ul a:hover:before {
   width: 100%;
 }
 
-.sr-container {
-  background-image: linear-gradient(62deg, #b1d6fa 0%, #fdfdfd 100%);
-}
-
-/* services */
-section.services {
-  padding: 80px 0;
-}
-
-section.services .s-title,
-section.reviews h3 {
-  text-align: center;
-  font-size: 2em;
-  line-height: 1.8;
-}
-
-section.services .s-desc {
-  text-align: center;
-  font-size: 1.2em;
-  font-style: italic;
-  line-height: 1.5em;
-}
-
-.services-boxes {
-  width: 80%;
-  margin: 50px auto;
-  padding-top: 30px;
+/* form */
+form .field {
   display: flex;
-  justify-content: space-around;
-}
-
-.service {
-  width: 300px;
-  height: 320px;
-  padding: 20px;
-  display: flex;
-  border-radius: 10px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-bottom: 20px;
 }
 
-.icon {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+form .field label {
+  padding-bottom: 5px;
+  font-size: 1em;
 }
 
-.fa-map-location-dot,
-.fa-sack-dollar,
-.fa-people-roof {
-  color: #05a8a0;
-  font-size: 4em;
-}
-
-.service p.title {
-  font-weight: 500;
-  font-size: 18px;
-  padding: 20px;
-}
-
-.service p.desc {
-  text-align: center;
-}
-
-/* reviews */
-section.reviews {
-  padding-bottom: 50px;
-}
-
-.reviews-boxes {
-  width: 65%;
-  margin: 50px auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.review {
-  width: 320px;
-  height: 200px;
-  padding: 20px;
-  display: flex;
-  border-radius: 10px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
-
-.ratings span.checked {
-  color: orange;
-}
-
-.reviewer {
+form .field input,
+form .field select {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
   width: 100%;
+  min-height: 40px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: #abd1c6;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px 20px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: #abd1c6;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.field input,
+textarea {
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.btn {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.avatar {
-  margin-right: 20px;
+/* button */
+button,
+input[type="submit"] {
+  padding: 8px;
+  color: #248277;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-image: linear-gradient(62deg, #469d89 0%, #99e2b4 100%);
 }
 
-.avatar img {
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.reviewer-details {
-  text-align: center;
-}
-
-.reviewer-details .desc {
-  font-size: 12px;
-  opacity: 0.8;
+button:hover,
+input[type="submit"]:hover {
+  color: #fff;
 }
 
 /* footer */
@@ -249,4 +196,55 @@ ul {
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0 10px;
+  }
+
+  header .logo {
+    font-size: 1.2em;
+  }
+
+  header nav {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  header nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header nav ul a {
+    margin: 10px 0;
+    font-size: 1em;
+    padding: 0;
+  }
+
+  /* footer */
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .footer br {
+    display: none;
+  }
+
+  .footer-col {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-col h4::before {
+    display: none;
+  }
 }
