@@ -1,14 +1,14 @@
 function sendMessage() {
-    var name = document.getElementById("input_name").value;
-    var phone = document.getElementById("input_tel").value;
-    var email = document.getElementById("input_email").value;
-    var message = document.getElementById("input_message").value;
+    let name = document.getElementById("input_name").value;
+    let phone = document.getElementById("input_tel").value;
+    let email = document.getElementById("input_email").value;
+    let message = document.getElementById("input_message").value;
       Email.send({
         Host: "smtp.elasticemail.com",
         Username: "milan.destura620@gmail.com",
         Password: "3D7250B8538677416DE47D366AA6EA19F4F6",
-        To: 'milan.destura007@gmail.com',
-        From: "milan.destura620@gmail.com",//change this to desired recipient(Happy Hikers Admin email)
+        To: 'milan.destura007@gmail.com',//change this to desired recipient(Happy Hikers Admin email)
+        From: email,
         Subject: "Happy Hikers : Mail from contact form",
         Body: "Name:" +name+ "<br/> Email:"+email + "<br/> Phone:" +phone+ "<br/> Message:" + message
       }).then(
@@ -18,11 +18,11 @@ function sendMessage() {
        }
 
     function validate() {
-    var name = document.getElementById("input_name").value;
-    var phone = document.getElementById("input_tel").value;
-    var email = document.getElementById("input_email").value;
-    var message = document.getElementById("input_message").value;
-    var isValid=true;
+      let name = document.getElementById("input_name").value;
+      let phone = document.getElementById("input_tel").value;
+      let email = document.getElementById("input_email").value;
+      let message = document.getElementById("input_message").value;
+      let isValid=true;
   
     if (!name) {
       alert('Name is required');
