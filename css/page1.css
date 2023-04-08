@@ -185,6 +185,7 @@ section.reviews {
 
   .review {
     margin-bottom: 30px;
+    align-items: center;
   }
 
   .review p.message {
@@ -200,6 +201,7 @@ section.reviews {
 
   .review .reviewer {
     flex-direction: column;
+    margin-top: 10px;
   }
 
   .review .reviewer .avatar {

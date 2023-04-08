@@ -26,14 +26,15 @@ section.about {
 }
 
 .img-section {
-  border: 1px solid red;
-  width: 30%;
-  height: 300px;
+  width: 35%;
+  height: 65vh;
 }
 
 .img-section img {
-  /* update later */
-  width: 00px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* contact form */
@@ -63,7 +64,6 @@ input[type="submit"] {
   padding: 10px 20px;
 }
 
-
 @media only screen and (max-width: 768px) {
   article {
     margin-top: 150px;
@@ -80,7 +80,7 @@ input[type="submit"] {
   }
 
   .img-section {
-    width: 80%;
+    width: 100%;
     margin-bottom: 30px;
   }
 
