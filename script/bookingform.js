@@ -29,3 +29,9 @@ function validateForm() {
     alert("Thank you for booking with us! \n\nAn email has been sent to you for payment instruction. \n\nEnjoy on your future hike! Happy Hiking!")
   }
 }
+
+
+function updateDest(dest) {
+  document.booking.destination.value = dest;
+  
+}
