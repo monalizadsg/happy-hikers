@@ -8,9 +8,9 @@ function sendMessage() {
         Username: "milan.destura620@gmail.com",
         Password: "3D7250B8538677416DE47D366AA6EA19F4F6",
         To: 'milan.destura007@gmail.com',//change this to desired recipient(Happy Hikers Admin email)
-        From: email,
+        From: "milan.destura620@gmail.com",
         Subject: "Happy Hikers : Mail from contact form",
-        Body: "Name:" +name+ "<br/> Email:"+email + "<br/> Phone:" +phone+ "<br/> Message:" + message
+        Body: "Name:" +name+ "<br/> Email:"+ email + "<br/> Phone:" +phone+ "<br/> Message:" + message
       }).then(
         message => alert(message)
       );
@@ -31,8 +31,10 @@ function sendMessage() {
   if (!phone) {
       alert('Phone is required');
       return false;
-  }
-
+  } else if (!validatePhoneNumber(phone)) {
+    alert('Phone number is invalid');
+    return false;
+}
   if (!email) {
       alert('Email is required');
       return false;
@@ -40,6 +42,7 @@ function sendMessage() {
       alert('Email is invalid');
       return false;
   }
+
 
   if (!message) {
       alert('Message is required');
@@ -52,6 +55,11 @@ function sendMessage() {
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
+}
+
+function validatePhoneNumber(phoneNumber) {
+  const phoneRegex = /^\d{3}\d{3}\d{4}$/; // regular expression for format XXX-XXX-XXXX
+  return phoneRegex.test(phoneNumber);
 }
 
 function validate1(){
