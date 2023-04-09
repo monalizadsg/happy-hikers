@@ -2,6 +2,7 @@ function updateMap(){
 
     let frame = document.getElementById("map").src;
     let dest = document.booking.destination.value;
+
     
     switch (dest) {
         case "Joffre Lake":
