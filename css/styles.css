@@ -79,30 +79,22 @@ form .field select {
   font-size: 16px;
   line-height: 24px;
   padding: 8px 16px;
-  width: 100%;
   min-height: 40px;
-  border: unset;
-  border-radius: 4px;
-  outline-color: #abd1c6;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 textarea {
-  width: 100%;
   margin-top: 5px;
   padding: 12px 20px;
+}
+
+form .field input,
+form .field select,
+textarea {
+  width: 100%;
   border: unset;
   border-radius: 4px;
   outline-color: #abd1c6;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-.field input,
-textarea {
-  border: unset;
-  border-radius: 4px;
-  outline-color: rgb(84 105 212 / 0.5);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
