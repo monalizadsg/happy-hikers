@@ -3,9 +3,6 @@ const slides = document.querySelectorAll(".img-slide");
 const contents = document.querySelectorAll(".content");
 let currentSlide = 0;
 
-// console.log(slides);
-// console.log(contents);
-
 function slideImages() {
   slides.forEach((slide) => {
     slide.classList.remove("active");
