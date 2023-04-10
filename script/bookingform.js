@@ -71,3 +71,7 @@ document.getElementById("phone").addEventListener("input", function () {
     document.getElementById("phone").classList.remove("error");
   }
 });
+
+function updateDest(dest) {
+  document.booking.destination.value = dest;
+}
