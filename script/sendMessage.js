@@ -7,7 +7,7 @@ function sendMessage() {
     Host: "smtp.elasticemail.com",
     Username: "milan.destura620@gmail.com",
     Password: "3D7250B8538677416DE47D366AA6EA19F4F6",
-    To: "milan.destura007@gmail.com", //change this to desired recipient(Happy Hikers Admin email)
+    To: "arveerflores@gmail.com", //change this to desired recipient(Happy Hikers Admin email)
     From: "milan.destura620@gmail.com",
     Subject: "Happy Hikers : Mail from contact form",
     Body:
