@@ -185,6 +185,17 @@ input[type="submit"]:hover {
   background-color: #ffffff;
 }
 
+/* form invalid css */
+.error,
+input:invalid {
+  border: 1px solid rgb(251, 67, 67) !important;
+}
+
+input:focus:invalid {
+  background-color: rgba(252, 142, 160, 0.3);
+  outline-color: rgb(250, 108, 108);
+}
+
 /* mobile styles */
 @media only screen and (max-width: 768px) {
   header {
